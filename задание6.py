@@ -1,10 +1,9 @@
-a = 'a' 
-e = 'e' 
-i = 'i'  
-o = 'o'  
-u = 'u' 
+vowels = 'aeiou'
 word = input("Введите слово: ")
-if not (a or e or i or o or u) in word:
-    print("Слово не содержит все гласные буквы.")
-else:
-    print("Слово содержит все гласные буквы.")
+for v in vowels:
+    if v in word:
+        print("Слово содержит гласные.")
+        break
+    else:
+        print("Слово не содержит гласные.")
+        break
